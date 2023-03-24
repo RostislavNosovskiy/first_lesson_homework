@@ -1,24 +1,15 @@
-﻿/*** Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-2, 3, 7 -> 7
-44 5 78 -> 78
-22 3 9 -> 22 */
+﻿/*** Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+5 -> 2, 4
+8 -> 2, 4, 6, 8 */
 Console.Clear();
-Console.WriteLine("Введите первое число:");
-int a = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите второе число:");
-int b = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите третье число:");
-int c = int.Parse(Console.ReadLine());
-int max = a;
-if(max>b)
+Console.WriteLine("Введите число:");
+int N = int.Parse(Console.ReadLine());
+int i = 0;
+while (i<N)
 {
-     max = a;}
-else
+if (i%2 == 0)
 {
-     max =b;}
-if (c>max)
-{
-     max = c;
+Console.WriteLine(i);
 }
-Console.WriteLine($"Максимальное число равно {max}");
-
+i++;
+}
